@@ -1,28 +1,19 @@
 import React from "react";
+import TrafficLight from "/workspaces/AlbertPitram_TrafficLight/src/js/components/Trafficlight.jsx"; // Ajusta la ruta según donde esté tu archivo
 
-//include images into your bundle
-import rigoImage from "../../img/rigo-baby.jpg";
+export default function App() {
 
-//create your first component
-const Home = () => {
 	return (
-		<div className="text-center">
-            
-
-			<h1 className="text-center mt-5">Hello Rigo!</h1>
-			<p>
-				<img src={rigoImage} />
-			</p>
-			<a href="#" className="btn btn-success">
-				If you see this green button... bootstrap is working...
-			</a>
-			<p>
-				Made by{" "}
-				<a href="http://www.4geeksacademy.com">4Geeks Academy</a>, with
-				love!
-			</p>
-		</div>
-	);
-};
-
-export default Home;
+    <div
+      style={{
+        height: "100vh",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        backgroundColor: "#f0f0f0",
+      }}
+    >
+      <TrafficLight />
+    </div>
+  );
+}
